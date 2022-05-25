@@ -62,14 +62,14 @@ document.addEventListener('DOMContentLoaded', function () {
         let percentageheads = 0
         let percentagetails = 0
 
-        // Before trying to divide, make sure total is not zero
+        // double checked, had a few mispellings, but alls good!
         if (totalrolls > 0) {
-            // Calculate percentage of heads and tails
+            // Calculate percentage of both sides of the coin
             percentHeads = Math.round((rollsheads / totalrolls) * 100)
             percentTails = Math.round((rollstails / totalrolls) * 100)
         }
 
-        // Update the values in the scoreboard table
+        // Updates...or clears up the board as it's the clear button
         document.getElementById('heads').textContent = rollsheads
         document.getElementById('heads-percent').textContent = percentageheads + '%'
         document.getElementById('tails').textContent = rollstails
