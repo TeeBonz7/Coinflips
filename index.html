@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The coin flipper</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <H1>Penny Flip Game</H1>
+        <div>
+            <h2>This here is a coin flipper. it flips and look at it go!</h2>
+            <hr>
+            <div>
+                <div>
+                    <img id="penny-image" src="assets\images\penny-image.png" alt="penny">
+                </div>
+                <div class="controls">
+                    <button id="flip">Toss The Coin dude</button>
+                    <button id="clear">Clear it, you don't need it</button>
+                </div>
+                <div class="message-container">
+                    <h3 id="message">Roll the kobold coin. do it!</h3>
+                </div>
+                <h2>The Amount of times and chances of flipped coins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Total of kobold heads</th>
+                            <th>Chance of a kobold</th>
+                            <th>Total of fox tails</th>
+                            <th>Chance of tails</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="heads">0</td>
+                            <td id="heads-percent">0%</td>
+                            <td id="tails">0</td>
+                            <td id="tails-percent">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
