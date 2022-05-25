@@ -1,4 +1,4 @@
-// TODO: Declare any global variables we need
+// TODO: Declare any global variables we need [DONE O]
 let rollsheads = 0
 let rollstails = 0
 // understanding the code. jeez loius
@@ -6,29 +6,29 @@ let rollstails = 0
 
 document.addEventListener('DOMContentLoaded', function () {
     // This is just a sanity check to make sure your JavaScript script is getting loaded
-    // You can remove it once you see it in your browser console in the developer tools
+    // [KEEPING THE CONSOLE SO i CAN CHECK]
     console.log('this is a healthy check up')
     document.getElementById('flip').addEventListener("click", () => {
         let Currentcoinflip = Math.round(Math.random() * 1)
         console.log(`yo, this is the number: ${Currentcoinflip}`)
 
-    // TODO: Add event listener and handler for flip and clear buttons
+    // [CHECKING LISTENERS]
 
-    // Flip Button Click Handler
-        // TODO: Determine flip outcome
+    // cOIN FLIPPER!
+        // it determines the outcome!
         if (Currentcoinflip) {
-
+                // this ones heads
             document.getElementById('penny-image').src='assets/images/penny-heads.png'
         document.getElementById('message').textContent = "Kobold Heads. Nice"
         rollsheads += 1
     }
     else {
-            
+            // this here is tails
         document.getElementById('penny-image').src='assets/images/penny-tails.png'
         document.getElementById('message').textContent = " Good land, The Fox's Tail. "
         rollstails += 1
     }
-
+    // tallies up for the percentages
     let totalrolls = rollsheads + rollstails
 
     let percentageheads = 0
@@ -44,22 +44,21 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('tails').textContent = rollstails
         document.getElementById('tails-percent').textContent = percentagetails + '%'
     })
-
+    // this clears up everything. :)
     document.getElementById('clear').addEventListener('click', function () {
-        // Reset the heads and tails values to zero
         rollsheads = 0
         rollstails = 0
 
-        // Update the message to the user
+        // Updates the message with a sad face
         document.getElementById('penny-image').src='assets/images/penny-sad.png'
         document.getElementById('message').textContent = 'you reset it, how could you? this kobold is sad now'
 
 
         
-        // Calculate total number of rolls
+        // Calculates for the fancy percentage
         let totalrolls = rollsheads + rollstails
 
-        // Create variables to track percent heads and tails
+        // created fancy variables
         let percentageheads = 0
         let percentagetails = 0
 
