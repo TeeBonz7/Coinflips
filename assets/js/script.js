@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         
-        // Calculates for the fancy percentage and sut
+        // Calculates for the fancy percentage and stuff
         let totalrolls = rollsheads + rollstails
 
         // created fancy variables
